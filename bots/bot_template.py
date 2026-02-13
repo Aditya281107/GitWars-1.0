@@ -232,6 +232,7 @@ def update(context):
                 # WRITE YOUR LOGIC HERE
 
                 #return ("MOVE",(dx,dy))
+                pass
 
         if coins:
             nearest_coin, dist = find_nearest(my_x, my_y, coins)
@@ -240,6 +241,7 @@ def update(context):
                     enemy_dist = distance(enemy["x"], enemy["y"], nearest_coin["x"], nearest_coin["y"])
 
                     # WRITE YOUR LOGIC HERE
+                    pass 
 
                     # # TIP: Compare enemy_dist with my_dist.
                     # If an enemy is closer to this coin, you may want to shoot to knock them back first.
@@ -256,8 +258,9 @@ def update(context):
             if will_bullet_hit_me(my_x, my_y, bullet):
 
                 # WRITE YOUR LOGIC HERE
-
+                
                 #return ("MOVE",(dx,dy))
+                pass
 
         if enemies and me["ammo"] > 0:
             # Find and attack nearest enemy
@@ -268,6 +271,7 @@ def update(context):
                     # What if the two tanks are stuck to each other (very close range)?
 
                     # WRITE YOUR LOGIC HERE (example: move away, strafe, or reposition)
+                    pass
 
                 elif dist < 200:
                      # Enemy in range — attack
@@ -278,6 +282,7 @@ def update(context):
                     # TO-DO: If enemy is far, should you move toward it? flank it? or reposition?
                     
                     # note: If you don't return an action here, your tank will stop!
+                    pass
 
     # =========================================================================
     # LEVEL 3 - THE JUGGERNAUT
@@ -318,6 +323,7 @@ def update(context):
             if enemy_dist < 250:
 
                 # WRITE YOUR LOGIC HERE
+                pass
         
         # Shooting
         if target_enemy and me["ammo"] > 0:
